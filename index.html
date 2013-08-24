@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="myApp">
+    <head>
+        <title>CORS App</title>
+    </head>
+    <body ng-controller="MainCtrl">
+      Cross-Origin Resource Sharing<br/>
+
+      <button ng-click="get()">GET</button>
+      Result : {{resultGet}}
+      <br/>
+      <input ng-model="movie"/><button ng-click="post(movie)">POST</button>
+      Result : {{resultPost}}
+      <script src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
