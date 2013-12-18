@@ -1,17 +1,18 @@
 <!doctype html>
-<html ng-app="myApp">
-    <head>
-        <title>CORS App</title>
-    </head>
-    <body ng-controller="MainCtrl">
-      Cross-Origin Resource Sharing<br/>
 
-      <button ng-click="get()">GET</button>
-      Result : {{resultGet}}
-      <br/>
-      <input ng-model="movie"/><button ng-click="post(movie)">POST</button>
-      Result : {{resultPost}}
-      <script src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
-        <script src="app.js"></script>
-    </body>
+<html ng-app="MyApp">
+  
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>Custom Plunker</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+    <script src="app.js"></script>	
+  </head>
+  
+  <body ng-controller="MyCtrl" data-ng-init= "loadData()">
+    <ul>
+         <li ng-repeat="item in items">ID: {{item._id}}, Name: {{item.name}}</li>
+    </ul>
+  </body>
+
 </html>
