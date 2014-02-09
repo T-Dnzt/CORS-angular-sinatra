@@ -1,9 +1,6 @@
 CORS-angular-sinatra
 ====================
 
-A RESTful example using Ruby/Sinatra Framework, AngularJs and MongoDB.
-
-
-Cross-domain calls from Angular.js to Sinatra for thibaultdenizet.com.
+Cross-domain calls from Angular.js to Sinatra and MongoDB database.
 
 Forked from https://github.com/T-Dnzt/CORS-angular-sinatra
