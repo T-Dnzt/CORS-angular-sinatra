@@ -9,8 +9,14 @@
       <button ng-click="get()">GET</button>
       Result : {{resultGet}}
       <br/>
-      <input ng-model="movie"/><button ng-click="post(movie)">POST</button>
+      <input ng-model="moviePost"/><button ng-click="post(moviePost)">POST</button>
       Result : {{resultPost}}
+      <br/>
+      <input ng-model="moviePut"/><button ng-click="put(moviePut)">PUT</button>
+      Result : {{resultPut}}
+      <br/>
+      <input ng-model="movieDelete"/><button ng-click="delete(movieDelete)">DELETE</button>
+      Result : {{resultDelete}}
       <script src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
         <script src="app.js"></script>
     </body>

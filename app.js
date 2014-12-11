@@ -29,4 +29,22 @@ app.controller('MainCtrl', function($scope, $http) {
 		});
 	};
 
+	$scope.put = function(value) {
+		$http.put("http://localhost:4567/movie", { 'movie': value }).success(function(result) {
+		    console.log(result);
+		    $scope.resultPut = result;
+		}).error(function() {
+		    console.log("error");
+		});
+	};
+
+	$scope.delete = function(value) {
+		$http.delete("http://localhost:4567/movie", { 'movie': value }).success(function(result) {
+		    console.log(result);
+		    $scope.resultDelete = result;
+		}).error(function() {
+		    console.log("error");
+		});
+	};
+
 });
